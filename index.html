@@ -11,25 +11,26 @@
     <div class="calculator">
         <input type="text" id="display" disabled/>
         <div class="box-buttons">
-            <button>C</button>
-            <button>DEL</button>
-            <button>/</button>
-            <button>*</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>-</button>
-            <button>4</button>            
-            <button>5</button>
-            <button>6</button>
-            <button>+</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button class="btn-zero">0</button>
-            <button>.</button>
-            <button class="btn-result">=</button>
+            <button onclick="clean()">C</button>
+            <button onclick="back()">DEL</button>
+            <button onclick="insertToDisplay('/')">/</button>
+            <button onclick="insertToDisplay('*')">*</button>
+            <button onclick="insertToDisplay('7')">7</button>
+            <button onclick="insertToDisplay('8')">8</button>
+            <button onclick="insertToDisplay('9')">9</button>
+            <button onclick="insertToDisplay('-')">-</button>
+            <button onclick="insertToDisplay('4')">4</button>            
+            <button onclick="insertToDisplay('5')">5</button>
+            <button onclick="insertToDisplay('6')">6</button>
+            <button onclick="insertToDisplay('+')">+</button>
+            <button onclick="insertToDisplay('1')">1</button>
+            <button onclick="insertToDisplay('2')">2</button>
+            <button onclick="insertToDisplay('3')">3</button>
+            <button class="btn-zero" onclick="insertToDisplay('0')">0</button>
+            <button onclick="insertToDisplay('.')">.</button>
+            <button onclick="result()" class="btn-result">=</button>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
