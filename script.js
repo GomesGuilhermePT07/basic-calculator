@@ -14,7 +14,7 @@ function back(){
 function result(){
     const display = document.querySelector('#display');
     try{
-        display.value = eval(display.value).toFixed(6);
+        display.value = eval(display.value);
     } catch {
         display.value = 'Erro matemático';
     }
